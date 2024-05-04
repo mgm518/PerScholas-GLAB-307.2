@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/overlay.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/forms.css"
+    />
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+      function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#logo" id="logo">[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]</a></li>
+        <li><a href="#Home" class="active">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li style="float: right">
+          <a onclick="on()" href="#login">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="login-user"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+            Log In</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div id="overlay">
+      <!-- <form id="loginForm" action="">
+        <div>
+          <label for="username">Username: </label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div>
+          <label for="password">password: </label>
+          <input type="password" id="password" name="password" required />
+          <div>
+            <button type="submit">Login</button>
+            <button type="button">Register</button>
+          </div>
+        </div>
+      </form> -->
+      <iframe src="login.html" scrolling="auto" onload="resizeIframe(this)"></iframe>
+      <div id="overlay_background" onclick="off()"></div>
+    </div>
+    <header>
+      <div class="welcome">Welcome</div>
+    </header>
+    <main>
+      <div>
+        <div class="headline">The main headline</div>
+        <div class="support_headline">A supporting headline</div>
+        <ul>
+          <li>reason 1</li>
+          <li>reason 2</li>
+        </ul>
+      </div>
+    </main>
+    <section>
+      <article>
+        <div class="headline" style="text-align: center">Testimonies</div>
+        <ul class="articles">
+          <hr />
+          <li>
+            James: Don't ask me what I'm talking about. I don't know, okay? I'm
+            just the vessel. The message has been gifted. I've moved on.
+          </li>
+          <hr />
+          <li>
+            Karen: You're giving me a sticker? Mary: Not just a sticker.That is
+            a sticker of a kitty saying “me- wow!” Karen: I'm not a preschooler.
+            Mary: Fine, I'll take it back Karen: I earned this, back off!
+          </li>
+          <hr />
+          <li>
+            Benjamin: Not trying to brag or anything, but I can wake up without
+            an alarm clock now simply due to my crippling and overwhelming
+            anxiety, so...
+          </li>
+        </ul>
+      </article>
+    </section>
+    <footer>Footer</footer>
+  </body>
+</html>

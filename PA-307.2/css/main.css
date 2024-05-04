@@ -1,0 +1,52 @@
+header {
+  height: 15vh;
+  /* width: 50vw; */
+  background-color: #D70040;
+  color: #F0EAD6;
+  text-align: center;
+}
+.welcome {
+    padding: 3vh;
+    font-size: xx-large;
+}
+main {
+  height: 45vh;
+  /* background-color: magenta; */
+  background-image: image-set("../images/pexels-itzel-zarate-1170413563-22858523.jpg");
+  padding: 5vh;
+}
+main > div {
+    height: 75%;
+    border: 8px solid #FFCC00;
+    border-radius: 10px;
+    background: rgba(250, 231, 181, 0.75);
+    padding: 2%;
+}
+main ul {
+    list-style-type: none;
+}
+main ul li {
+    float: left;
+    padding: 1px 16px;
+}
+.headline {
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.support_headline {
+    text-transform: capitalize;
+    font-size: large;
+}
+section {
+  height: 20vh;
+  background-color: #FAE7B5;
+  padding: 2%;
+  padding-bottom: 8vh;
+}
+footer {
+  height: 5vh;
+  
+  background-color: grey;
+  color: white;
+}

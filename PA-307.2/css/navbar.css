@@ -1,0 +1,32 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #414a4c;
+}
+nav li {
+  float: left;
+  border-right: 1px solid #fff8dc;
+}
+nav li:last-child {
+  border-right: none;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover:not(.active, #logo) {
+  background-color: #d98695;
+}
+.active {
+  background-color: #d70a53;
+}
+.login-user {
+  height: 1em;
+  margin-right: 1em;
+  vertical-align: center;
+}
